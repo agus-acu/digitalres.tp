@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OnlyGym</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="shortcut icon" href="img/pesa.ico" type="image/z-icon" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="img/logo.png" alt="logo" class="logo"
+      /></a>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="about.html">¿Quienes somos?</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="entrenamientos.html">Entrenamientos</a></li>
+          <li><a href="turnos.html">Turnos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contenedor" id="contacto">
+        <section id="contacto-form">
+          <br />
+          <h1 id="contacto-titulo">Contacto</h1>
+          <form action="" method="post">
+            <p>Envianos tus datos. Un asesor te contactará a la brevedad:</p>
+            <br /><br>
+            <label for="nombre">Nombres:</label>
+            <input
+              type="text"
+              id="nombres"
+              name="nombres"
+              placeholder="Nombres"
+              minlength="2"
+              maxlength="20"
+              class="contacto-item"
+              required
+            />
+            <label for="apellido">Apellidos:</label>
+            <input
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              placeholder="Apellidos"
+              minlength="2"
+              maxlength="20"
+              class="contacto-item"
+              required
+            />
+            <br />
+            <br />
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input
+              type="date"
+              name="nacimiento"
+              id="nacimiento"
+              placeholder="dd/mm/aaaa"
+              class="contacto-item"
+              required
+            />
+            <br />
+            <br />
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="direccion@email.com"
+              minlength="7"
+              maxlength="30"
+              class="contacto-item"
+              required
+            />
+            <br />
+            <br />
+            <label for="telefono">Teléfono (Opcional):</label>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              maxlength="15"
+              class="contacto-item"
+            />
+            <br />
+            <br />
+            <label for="entrenamiento">Tipo de entrenamiento:</label>
+            <select
+              name="entrenamiento"
+              id="entrenamiento"
+              class="contacto-item"
+            >
+              <option selected disabled value="">Elija uno</option>
+              <option value="musculacion">Musculación</option>
+              <option value="crossfit">Crossfit</option>
+              <option value="funcional">Funcional</option>
+              <option value="fisioterapia">Fisioterapia</option>
+            </select>
+            <br /><br />
+            <p>Ingrese información adicional:</p>
+            <br />
+            <textarea
+              name="info"
+              id="info"
+              cols="50"
+              rows="4"
+              maxlength="140"
+              placeholder="Máximo 140 caracteres"
+              class="contacto-item"
+            ></textarea>
+            <br /><br />
+            <input
+              type="submit"
+              value="Enviar"
+              id="contacto-enviar"
+            />
+          </form>
+          <br />
+          <section id="mapa">
+            <p>Tambien puedes encontrarnos en nuestra sucursal:</p>
+            <br />
+            <p>Horario de atencion de lunes a viernes de 8 a 16hs</p>
+            <br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.276313123742!2d-64.19900662496858!3d-31.40960239592241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298874b1db431%3A0xf82371cc19832228!2zQXYuIENvbMOzbiAxMDAwLCBDw7NyZG9iYQ!5e1!3m2!1ses!2sar!4v1689106259025!5m2!1ses!2sar"
+              width="600"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <br /><br />
+          </section>
+        </section>
+      </div>
+
+      <div id="enlace-volver">
+        <a href="#" id="volver">Volver arriba</a>
+    </div>
+    </main>
+
+    <footer>
+      <br />
+      <p>OnlyGym</p>
+      <br />
+      <p>Direccion: Av. Colon N° 1000 - Ciudad de Cordoba</p>
+      <p>E-mail: only@gym.com</p>
+      <br />
+      <div class="disclaimer">
+        <p>
+          Advertencia: Este sitio web fue diseñado para un trabajo practico de
+          un curso de programacion.
+        </p>
+        <p>Sus contenidos no son veridicos, ni persiguen fines comerciales</p>
+        <br />
+        <p>Autor: Agustin Leonardo Acuña - Año 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
